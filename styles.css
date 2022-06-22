@@ -15,10 +15,11 @@ header {
 }
 .search {
     display: grid;
-    grid-template-columns: 0.08fr 0.6fr;
+    grid-template-columns: 0.08fr 1fr;
     align-content: center;
-    width: 100%;
 }
+
+
 
 label.icon {
     display: inline-block;
