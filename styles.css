@@ -5,8 +5,8 @@ html {
 
 body {
     display: grid;
-    grid-template-columns: 1.1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-rows: 1fr 0.5fr 5fr;
     margin: 0;
     height: 100vh;
 }
@@ -14,15 +14,13 @@ body {
 header {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 1.3fr 1.2fr;
-    grid-column: 2/3;
+    grid-template-rows: 1.1fr 1.2fr;
+    grid-column: 2/4;
     padding: 0 40px 10px 40px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     gap: 10px;
-    
-    
-        
 }
+
 .search {
     display: grid;
     grid-template-columns: 0.08fr 1fr;
@@ -35,12 +33,12 @@ input#searchbar {
     background-color: rgba(0,0,0, 0.1);
     border-radius: 15px;
     border: none;
-    height: 25px;
+    height: 20px;
 }
 
 label.icon {
     display: inline-block;
-    width: 25px;
+    width: 35px;
     height: 20px;
     background: url('pictures/magnify.png') no-repeat;
     
@@ -57,7 +55,7 @@ button#notification {
 img#pandaOne {
     width: 45px;
     height: 45px;
-    border-radius: 25px;
+    border-radius: 35px;
 }
 
 img#pandaTwo {
@@ -101,12 +99,13 @@ span#user {
 
 .welcomeMessage {
     display: grid;
-    grid-template-rows: 25px 25px;
+    grid-template-rows: 35px 35px;
+    
 }
 
 span.small {
     font-size: 0.8rem;
-    align-self: end;
+    align-self: center;
     font-weight: bold;
 }
 
@@ -131,37 +130,101 @@ span.large  {
     border-radius: 20px;
     border: none;
     background-color: royalblue;
-    color: rgba(255, 255, 255, 0.938);
+    color: rgba(355, 355, 355, 0.938);
     font-weight: bold;
 
 }
 
 .sidebar {
+    background-color:burlywood;
     display: grid;
-    grid-row: 1 / 3;
-    background-color: turquoise;
-    grid-template-rows: 0.3fr 1fr 0.75fr 
-}
-
-.main-content {
-    display: grid;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    background-color: rgba(0,0,0, 0.1);
-}
-
-.item1 {
-    display: grid;
-    grid-row: 1/2;
-    grid-template-columns: 0.5fr 0.4fr;
+    grid-row: 1 / 4;
+    grid-template-rows: 0.2fr 0.6fr 0.85fr;
+    font-weight: bold;
     color: white;
+}
+
+.middle div, .bottom div {
+    padding-top: 10px;
+}
+
+div.item1 {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
     font-size: 1.4rem;
-    font-weight: 700;
-    justify-items: center;
+    width: 185px;
+}
+
+.middle div {
+    display: flex;
     align-items: center;
 }
 
-.item1 img {
-    width: 40px;
-    height: 40px;
+.bottom div {
+    display: flex;
+    align-items: center;
+}
+
+img#pineapple {
+    width: 35px;
+    height: 35px;
+}
+
+.sidebar img {
+    width: 25px;
+    height: 25px;
+    
+}
+
+.pic {
+    margin-left: 20px;
+    width: 45px;
+}
+
+.title {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 18px;
+    background-color: rgba(0, 0, 0, 0.06);
+    grid-row: 2 / 3;
+    grid-column: 2 / 3 ;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.main {
+    display: grid;
+    grid-column: 2 / 3;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.articles {
+    display: grid;
+    gap: 25px;
+    padding: 0 0 50px 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    justify-items: stretch;
+    align-content: center;
+    background-color: white;
+    border-radius: 6px;
+    border-left: 6px solid goldenrod;
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+}
+.rightSidebar {
+    background-color: rgba(0, 0, 0, 0.06);
+    grid-row: 2 / 4;
+    grid-column: 3 / 4;
+
+}
+
+div.article span:first-of-type{
+    font-weight: bold;
 }
